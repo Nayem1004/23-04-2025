@@ -34,8 +34,7 @@ var myDiv = document.getElementById("my-div")
 myDiv.appendChild(heading2)
 //remove
 
-var heading1 = document.getElementsByTagName("h2")[1];
-myDiv.removeChild(heading1);
+
 
 //image slider
 
