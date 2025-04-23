@@ -1,6 +1,6 @@
 //getElementById
-document.getElementById("heading").innerHTML = "hii i am nayem";
-document.getElementsByClassName("practice").innerHTML = "we are five person , in our office ";
+document.getElementById("heading").innerHTML = "Hi we are procoder family";
+document.getElementById("practice").innerHTML = "we are five person , in our office ";
 
 document.querySelector("#p").innerHTML = "hello bangladesh";
 document.querySelector(".pa").innerHTML = "Fardin is a good boy";
@@ -36,3 +36,32 @@ myDiv.appendChild(heading2)
 
 var heading1 = document.getElementsByTagName("h2")[1];
 myDiv.removeChild(heading1);
+
+//image slider
+
+var photos =["image/1.jpg", "image/2.jpg", "image/man-2.jpg", "image/man1.png"];
+var imgTag = document.querySelector("#slide")
+
+var count = 0;
+
+function next(){
+    count++;
+    if(count>=photos.length){
+        count=0;
+        imgTag.src = photos[count];
+    }else{
+        imgTag.src = photos[count];
+    }
+
+}
+
+function prev(){
+    count--;
+    if(count < 0){
+        count = photos.length -1;
+        imgTag.src=photos[count];
+    }else{
+        imgTag.src = photos[count];
+    }
+    
+}
