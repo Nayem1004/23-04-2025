@@ -22,7 +22,7 @@ function myPicture2(){
 }
 
 var heading1 = document.getElementsByTagName("h1");
-heading1.innerHTML = "say hello"
+heading1.innerHTML = "say hello";
 
 //creting element
 
@@ -30,16 +30,13 @@ var heading2 = document.createElement("h4");
 var text = document.createTextNode("this is heading");
 heading2.appendChild(text);
 
-var myDiv = document.getElementById("my-div")
-myDiv.appendChild(heading2)
-//remove
-
-
+var myDiv = document.getElementById("my-div");
+myDiv.appendChild(heading2);
 
 //image slider
 
 var photos =["image/1.jpg", "image/2.jpg", "image/man-2.jpg", "image/man1.png"];
-var imgTag = document.querySelector("#slide")
+var imgTag = document.querySelector("#slide");
 
 var count = 0;
 
@@ -64,3 +61,9 @@ function prev(){
     }
     
 }
+
+function showName() {
+    const name = document.getElementById("nameInput").value;
+    document.getElementById("output").textContent = "Hello, " + name ;
+
+  }
